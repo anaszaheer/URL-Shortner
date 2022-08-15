@@ -1,0 +1,30 @@
+<div class="container">
+
+    <h1>URL Shortner</h1>
+    
+    <form action="/shortUrl" method="POST" class="my-4 form-inline">
+        <label for="fullUrl" class="sr-only">Url</label>
+        <input type="url" required placeholder="add url here.." name="fullUrl" class="form-control col mr-2"
+            id="fullUrl">
+        <button type="submit" class="btn btn-success">Shrink</button>
+    </form>
+
+    <table class="table table-striped table-responsive">
+        <thead>
+            <th class="fs-3">Full Url</th>
+            <th class="fs-3">Short Url</th>
+            <th class="fs-3">Clicks</th>
+        </thead>
+
+        <tbody>
+            {{#each shortUrls}}
+            <tr>
+                <td><a href="{{this.full}}">{{this.full}}</a></td>
+                <td><a href="{{this.short}}">{{this.short}}</a></td>
+                <td>{{this.clicks}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+
+</div>
