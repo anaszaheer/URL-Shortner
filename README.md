@@ -1,2 +1,10 @@
 # URL-Shortner
-Just made this while I was free. It shorts the URL provided to it. Using Node, Express and Handlebars
+
+#Initialise
+1) install node_modules using 'npm i'.
+2) start server with 'npm start'
+
+#Run
+1) add the link you want to shorten in the text field
+2) press 'shrink' button
+3) 'full', 'shorted' and 'clicks' will be displayed in the table.
